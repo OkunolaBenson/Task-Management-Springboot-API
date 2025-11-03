@@ -1,13 +1,13 @@
 package com.example.taskmanager.dto;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class TaskResponseDTO {
     private Long id;
     private String title;
     private String description;
     private Boolean completed;
-    private LocalDateTime createdAt;
+    private LocalDate createdAt;
 
     public Long getId() {
         return id;
@@ -41,11 +41,11 @@ public class TaskResponseDTO {
         this.completed = completed;
     }
 
-    public LocalDateTime getCreatedAt() {
+    public LocalDate getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(LocalDateTime createdAt) {
+    public void setCreatedAt(LocalDate createdAt) {
         this.createdAt = createdAt;
     }
 }
